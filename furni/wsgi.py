@@ -12,5 +12,9 @@ import os
 from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'furni.settings')
+# allow only for localhost
+# application = get_wsgi_application()
 
-application = get_wsgi_application()
+# aloow only for vercel
+app = get_wsgi_application()
+
